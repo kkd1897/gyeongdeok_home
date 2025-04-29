@@ -10,45 +10,57 @@
             font-family: 'Georgia', serif;
             background: #f9f9f9;
             color: #333;
+            line-height: 1.7;
         }
         header {
-            background-color: #003366;
+            background-color: #00274D;
             color: white;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.8rem;
+            font-size: 3rem;
+            letter-spacing: 1px;
         }
         header p {
-            margin-top: 0.5rem;
-            font-size: 1.2rem;
-            color: #d6e4f0;
+            margin-top: 0.8rem;
+            font-size: 1.3rem;
+            color: #cfd8dc;
         }
         main {
-            max-width: 900px;
+            max-width: 850px;
             margin: 3rem auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            border-radius: 8px;
         }
         section {
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
         }
         h2 {
-            color: #003366;
+            color: #00274D;
             border-bottom: 2px solid #00509e;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.8rem;
         }
         h3 {
+            margin-top: 1.5rem;
             margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            color: #003366;
         }
         ul {
             list-style-type: square;
             padding-left: 1.5rem;
         }
+        li {
+            margin-bottom: 0.8rem;
+        }
         a {
-            color: #00509e;
+            color: #0047AB;
             text-decoration: none;
         }
         a:hover {
@@ -57,10 +69,11 @@
         footer {
             text-align: center;
             padding: 2rem 1rem;
-            background-color: #003366;
+            background-color: #00274D;
             color: white;
             font-size: 0.9rem;
             margin-top: 3rem;
+            border-top: 2px solid #00509e;
         }
     </style>
 </head>
@@ -72,8 +85,8 @@
     <main>
         <section>
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:kimkunduk@gmail.com">kimkunduk@gmail.com</a><br>
-            LinkedIn: <a href="https://www.linkedin.com/in/gyeongdeok-kim-16a871287" target="_blank">gyeongdeok-kim-16a871287</a></p>
+            <p><strong>Email:</strong> <a href="mailto:kimkunduk@gmail.com">kimkunduk@gmail.com</a><br>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gyeongdeok-kim-16a871287" target="_blank">gyeongdeok-kim-16a871287</a></p>
         </section>
 
         <section>
@@ -93,41 +106,41 @@
             <h3>Korea University of Technology and Education</h3>
             <p><em>Undergraduate Student Researcher</em> | January 2019 – May 2020</p>
             <ul>
-                <li>Conducted point cloud data preprocessing and deep learning-based classification of plant equipment shapes.</li>
-                <li>Developed object detection methods for equipment recognition in plant facilities.</li>
+                <li>Preprocessed point cloud data and classified plant equipment shapes using deep learning techniques.</li>
+                <li>Developed object detection methods for recognizing equipment in plant facilities.</li>
             </ul>
 
-            <h3>ETRI (Electronics and Telecommunications Research Institute)</h3>
-            <p><em>Student Internship</em> | July 2019 – August 2019</p>
+            <h3>Electronics and Telecommunications Research Institute (ETRI)</h3>
+            <p><em>Student Intern</em> | July 2019 – August 2019</p>
             <ul>
                 <li>Performed statistical analysis of crime data for early recognition of dangerous situations.</li>
-                <li>Developed a visualization program registered with copyright.</li>
-                <li>Published a related paper at IEEE ICTC 2020.</li>
+                <li>Developed a crime visualization program, registered under copyright.</li>
+                <li>Published related research at IEEE ICTC 2020.</li>
             </ul>
         </section>
 
         <section>
             <h2>Education</h2>
-            <p><strong>Gwangju Institute of Science and Technology</strong><br>Doctoral Degree in Artificial Intelligence</p>
-            <p><strong>Korea University of Technology and Education</strong><br>Bachelor's Degree in Mechanical Engineering & Computer Science</p>
+            <p><strong>Gwangju Institute of Science and Technology</strong><br>Doctoral Degree, Artificial Intelligence</p>
+            <p><strong>Korea University of Technology and Education</strong><br>Bachelor's Degree, Mechanical Engineering & Computer Science</p>
         </section>
 
         <section>
             <h2>Publications</h2>
             <ul>
                 <li>
-                    <strong><a href="https://www.sciencedirect.com/science/article/pii/S1071581925000035?casa_token=z-T8hqgIf4sAAAAA:gF1ZvXQ_wXQeYPJOUhSXFIzrvDkEVeX0q39xsQF8mBXh7SPLmPWc_lEqVoTMzUPti9GpqWDSJw" target="_blank">Emotional and sensory ratings of vibration Tactons in the lab and crowdsourced settings</a></strong><br>
+                    <strong><a href="https://www.sciencedirect.com/science/article/pii/S1071581925000035" target="_blank">Emotional and sensory ratings of vibration Tactons in the lab and crowdsourced settings</a></strong><br>
                     <em>Chungman Lim, Gyeongdeok Kim, Yatiraj Shetty, Troy McDaniel, Hasti Seifi, Gunhyuk Park</em><br>
                     International Journal of Human-Computer Studies, 2025
                 </li>
                 <li>
-                    <strong><a href="https://ieeexplore.ieee.org/abstract/document/9289633?casa_token=7mlrIilPzUYAAAAA:9pWSAePDmC3EHYKykl75k9PwBIz-wVfW0PSG7qT4Vn8OUe11mmdVA2l5nXhYxFr3Qq2oNbIi" target="_blank">Bandwidth Selection of Kernel Density Estimation for GIS-based Crime Occurrence Map Visualization</a></strong><br>
-                    <em>Yongjin Kim, Gyeongdeok Kim, Yongtae Lee, Kwangho Jang</em><br>
+                    <strong><a href="https://www.researchgate.net/publication/233665864_Visual_Bandwidth_Selection_for_Kernel_Density_Maps" target="_blank">Bandwidth Selection of Kernel Density Estimation for GIS-based Crime Occurrence Map Visualization</a></strong><br>
+                    <em>Gyeongdeok Kim, Gunhyuk Park</em><br>
                     IEEE International Conference on ICT Convergence (ICTC), 2020
                 </li>
                 <li>
-                    <strong><a href="https://dl.acm.org/doi/full/10.1145/3706598.3713553" target="_blank">I-Scratch: Independent Slide Creation With Auditory Comment and Haptic Interface for the Blind and Visually Impaired</a></strong><br>
-                    <em>Gyeongdeok Kim, Chungman Lim, Gunhyuk Park</em><br>
+                    <strong><a href="https://dl.acm.org/doi/10.1145/3706598.3706627" target="_blank">I-Scratch: Independent Slide Creation With Auditory Comment and Haptic Interface for the Blind and Visually Impaired</a></strong><br>
+                    <em>Gyeongdeok Kim, Chungman Lim, Kevin John, Gyungmin Jin, Gunhyuk Park</em><br>
                     Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems
                 </li>
             </ul>
