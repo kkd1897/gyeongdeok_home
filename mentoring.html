@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gyeongdeok Kim - Mentoring</title>
+
+  <style>
+    html{
+        font-size: 18px;
+    }
+    body{
+      margin:0;
+      font-family:'Georgia', serif;
+      background:#f9f9f9;
+      color:#333;
+      line-height:1.7;
+      font-size: 1rem;   /* 🔥 핵심 */
+    }
+
+    /* Top navigation bar */
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color:#00274D;
+      color:#fff;
+      padding: 1rem 1.2rem;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom: 2px solid #00509e;
+    }
+    .brand a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      font-size:1.05rem;
+      letter-spacing:0.3px;
+    }
+    .nav a{
+      color:#cfd8dc;
+      text-decoration:none;
+      margin-left:1rem;
+      font-size:1rem;
+    }
+    .nav a:hover{ text-decoration:underline; }
+    .nav a.active{
+      color:#fff;
+      text-decoration:underline;
+    }
+
+    main{
+      max-width:1100px;
+      margin:3rem auto;
+      padding:0 2rem;
+    }
+
+    .page-title{
+      margin:0 0 1.5rem 0;
+      font-size:3rem;
+      color:#00274D;
+      letter-spacing:0.2px;
+    }
+
+    .subtitle{
+      margin:0 0 2rem 0;
+      color:#555;
+      font-size:1.05rem;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:10px;
+      padding:1.5rem 1.75rem;
+      box-shadow:0 0 10px rgba(0,0,0,0.05);
+      margin-bottom:1.25rem;
+    }
+
+    .mentor-item{
+      display:flex;
+      justify-content:space-between;
+      gap:1rem;
+      align-items:flex-start;
+    }
+
+    .mentee{
+      font-weight:700;
+      font-size:1.15rem;
+      margin-bottom:0.2rem;
+    }
+
+    .meta{
+      color:#555;
+      font-size:1rem;
+    }
+
+    .period{
+      color:#00274D;
+      font-weight:700;
+      white-space:nowrap;
+      font-size:1rem;
+    }
+
+    footer{
+      text-align:center;
+      padding:2rem 1rem;
+      background-color:#00274D;
+      color:#fff;
+      font-size:0.9rem;
+      margin-top:3rem;
+      border-top:2px solid #00509e;
+    }
+
+    @media (max-width:900px){
+      .page-title{ font-size:2.4rem; }
+      .mentor-item{
+        flex-direction:column;
+        gap:0.5rem;
+      }
+      .period{ white-space:normal; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <a href="index.html">Gyeongdeok Kim</a>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="awards.html">Awards</a>
+    <a class="active" href="mentoring.html">Mentoring</a>
+  </nav>
+</header>
+
+<main>
+  <h1 class="page-title">Mentoring</h1>
+  <p class="subtitle">
+    Mentoring and supervision activities.
+  </p>
+
+  <section class="card">
+    <div class="mentor-item">
+      <div>
+        <div class="mentee">Junhyeok Jang</div>
+        <div class="meta">Mentoring</div>
+      </div>
+      <div class="period">Dec 2025 – Present</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 Gyeongdeok Kim
+</footer>
+
+</body>
+</html>

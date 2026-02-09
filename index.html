@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gyeongdeok Kim - Home</title>
   <style>
-    body{
-      margin:0;
-      font-family:'Georgia', serif;
-      background:#f9f9f9;
-      color:#333;
-      line-height:1.7;
+    html{
+        font-size: 18px;
     }
+    body{
+        margin:0;
+        font-family:'Georgia', serif;
+        background:#f9f9f9;
+        color:#333;
+        line-height:1.7;
+
+        font-size: 1rem;   /* 🔥 핵심 */
+    }
+
 
     /* Top navigation bar */
     .topbar{
@@ -47,9 +53,9 @@
 
     /* Layout container */
     main{
-      max-width: 980px;
-      margin: 2.5rem auto;
-      padding: 0 1.5rem;
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 2rem;
     }
 
     /* About card */
@@ -74,26 +80,45 @@
       border-radius:10px;
       display:block;
     }
-
     .icon-row{
-      margin-top: 1rem;
-      display:flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+        margin-top: 1.2rem;          /* 사진과의 거리 */
+        display:flex;
+        justify-content:center;     /* 🔥 가운데 정렬 */
+        gap: 1rem;                  /* 아이콘 간격 */
     }
-    .icon-link{
-      display:inline-block;
-      padding: 0.35rem 0.65rem;
-      border: 1px solid #d9e2ec;
-      border-radius: 999px;
-      text-decoration:none;
-      color:#0047AB;
-      background:#fff;
-      font-size:0.95rem;
+
+
+    /* 아이콘 버튼 */
+    .icon-icon{
+        width:48px;
+        height:48px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius:50%;
+        background:#fff;
+        border:1px solid #d9e2ec;
+        box-sizing:border-box;
+        overflow:hidden;   /* 🔥 중요 */
     }
-    .icon-link:hover{
-      text-decoration:underline;
+
+    /* 아이콘 이미지 */
+    .icon-icon img{
+        width:60%;         /* 🔥 버튼 기준 강조 */
+        height:60%;
+        max-width:24px;    /* 안전장치 */
+        max-height:24px;
+        object-fit:contain;
+        display:block;
     }
+
+    /* hover */
+    .icon-icon:hover{
+        background:#f0f4f8;
+        transform: translateY(-2px);
+        transition: all 0.2s ease;
+    }
+
 
     .right{
       flex: 1 1 auto;
@@ -155,9 +180,19 @@
         <img class="profile" src="assets/img/profile.png" alt="Portrait of Gyeongdeok Kim" />
 
         <div class="icon-row">
-          <!-- TODO: Replace Google Scholar link if you have one -->
-          <a class="icon-link" href="https://scholar.google.com/citations?user=O0pzcoQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-          <a class="icon-link" href="https://www.linkedin.com/in/gyeongdeok-kim-16a871287" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="icon-icon" 
+                href="https://scholar.google.com/citations?user=O0pzcoQAAAAJ&hl=en"
+                target="_blank"
+                aria-label="Google Scholar">
+                <img src="assets/img/icons/google_scholar.png" alt="Google Scholar icon">
+            </a>
+
+            <a class="icon-icon"
+                href="https://www.linkedin.com/in/gyeongdeok-kim-16a871287"
+                target="_blank"
+                aria-label="LinkedIn">
+                <img src="assets/img/icons/linkedin.svg" alt="LinkedIn icon">
+            </a>
         </div>
       </div>
 
