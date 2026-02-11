@@ -20,7 +20,7 @@
 
 
     /* Top navigation bar */
-    .topbar{
+    /* .topbar{
       position: sticky;
       top: 0;
       z-index: 10;
@@ -32,18 +32,56 @@
       justify-content:space-between;
       border-bottom: 2px solid #00509e;
     }
+    
+    .nav a{
+      color:#cfd8dc;
+      text-decoration:none;
+      margin-left:1rem;
+      font-size:1rem;
+    } */
+
+    /* 공통: topbar가 좁아지면 줄바꿈 허용 */
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color:#00274D;
+      color:#fff;
+      padding: 1rem 1.2rem;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom: 2px solid #00509e;
+
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* nav도 한 줄 고집하지 말고 감싸기 */
+    .nav{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+
+    /* 기존 margin-left 방식은 모바일에서 폭을 낭비하니 제거하고 padding으로 */
+    .nav a{
+      
+      color:#cfd8dc;
+      text-decoration:none;
+      font-size:1rem;
+      margin-left: 0;
+      padding: 0.25rem 0.4rem;
+    }
+
+
     .brand a{
       color:#fff;
       text-decoration:none;
       font-weight:700;
       letter-spacing:0.3px;
       font-size:1.05rem;
-    }
-    .nav a{
-      color:#cfd8dc;
-      text-decoration:none;
-      margin-left:1rem;
-      font-size:1rem;
     }
     .nav a:hover{ text-decoration:underline; }
     .nav a.active{
