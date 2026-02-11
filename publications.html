@@ -21,7 +21,7 @@
 
 
     /* Top navigation bar */
-    .topbar{
+    /* .topbar{
       position: sticky;
       top: 0;
       z-index: 10;
@@ -33,17 +33,49 @@
       justify-content:space-between;
       border-bottom: 2px solid #00509e;
     }
-    .brand a{
-      color:#fff;
-      text-decoration:none;
-      font-weight:700;
-      font-size:1.05rem;
-    }
     .nav a{
       color:#cfd8dc;
       text-decoration:none;
       margin-left:1rem;
       font-size:1rem;
+    } */
+
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color:#00274D;
+      color:#fff;
+      padding: 1rem 1.2rem;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom: 2px solid #00509e;
+
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .nav{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+
+    .nav a{
+      color:#cfd8dc;
+      text-decoration:none;
+      margin-left: 0;
+      padding: 0.25rem 0.4rem;
+      font-size:1rem;
+
+    }
+    
+    .brand a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      font-size:1.05rem;
     }
     .nav a:hover{ text-decoration:underline; }
     .nav a.active{
