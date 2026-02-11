@@ -195,10 +195,8 @@
         font-size: 12px;   /* 18px → 15px */
       }
       .nav a{
-        font-size:1.4rem;
-      }
-      .brand a{
-        font-size:1.4rem;
+        flex-wrap: nowrap;       /* 🔥 줄바꿈 금지 */
+        overflow-x: auto;        /* 🔥 공간 부족하면 가로 스크롤 */
       }
        /* 카드 최상단에 제목을 새로 생성 */
       .about::before{
