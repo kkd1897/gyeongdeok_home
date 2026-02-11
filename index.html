@@ -194,13 +194,49 @@
       html{
         font-size: 12px;   /* 18px → 15px */
       }
-      .about{ flex-direction:column; }
-      .left{ width: 220px; flex: 0 0 auto; }
-      .profile{
-        display:block;
-        margin: 0 auto;        /* ✅ 혹시 모를 브라우저 차이 대비 */
+       /* 카드 최상단에 제목을 새로 생성 */
+      .about::before{
+        content: "About me";
+        display: block;
+        font-size: 2.4rem;   /* 모바일용 크기 */
+        font-weight: 700;
+        color: #00274D;
+        text-align: center;
+        letter-spacing: 0.2px;
+        margin-bottom: -1.5rem;
       }
-      .page-title{ font-size: 2.4rem; }
+      .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   /* ✅ 핵심 */
+      }
+      .page-title{
+        display: none;
+      }
+      .left{
+        width: 100%;
+        max-width: 500px;   /* 🔥 텍스트랑 동일한 폭 제한 */
+      }
+      .right{
+        width: 100%;
+        max-width: 500px;   /* 🔥 사진과 동일 */
+      }
+      .right p{
+        font-size: 1.2rem;
+      }
+      
+      .profile{
+        width: 100%;
+        height: 300px;        /* 🔥 크롭 기준 높이 */
+        object-fit: cover;               /* ✅ 자연스럽게 크롭 */
+        object-position: 50% 80%;        /* 얼굴 위치 위로 조금 */
+        display:block;
+        margin: 0 auto;
+        border-radius: 14px;
+      }
+      .icon-row{ gap: 0.7rem; margin-top: 0.9rem; }
+      .icon-icon{ width: 42px; height: 42px; }
+      .icon-icon img{ width: 55%; height: 55%; }
     }
   </style>
 </head>
