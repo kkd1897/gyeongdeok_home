@@ -77,6 +77,7 @@
       text-decoration:none;
       font-weight:700;
       font-size:1.05rem;
+      letter-spacing:0.3px;
     }
     .nav a:hover{ text-decoration:underline; }
     .nav a.active{
@@ -216,6 +217,9 @@
     }
 
     @media (max-width: 900px){
+      html{
+        font-size: 12px;   /* 18px → 15px */
+      }
       .pub-item{ flex-direction:column; }
       .pub-thumb-wrapper{
         width:100%;
