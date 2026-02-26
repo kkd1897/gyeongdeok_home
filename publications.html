@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
       background:#f9f9f9;
       color:#333;
       line-height:1.7;
-      font-size: 1rem;   /* 🔥 핵심 */
+      font-size: 1rem;   /* ?뵦 ?듭떖 */
     }
 
 
@@ -105,29 +105,29 @@
 
    .pub-item{
         display:flex;
-        gap:2rem;                 /* 🔹 텍스트와 이미지 간격 살짝 증가 */
+        gap:2rem;                 /* ?뵻 ?띿뒪?몄? ?대?吏 媛꾧꺽 ?댁쭩 利앷? */
         padding:1.75rem;
         background:#fff;
         border-radius:10px;
         box-shadow:0 0 10px rgba(0,0,0,0.05);
         margin-bottom:1.5rem;
 
-        align-items: stretch;     /* 🔹 양쪽 컬럼 높이 맞춤 */
+        align-items: stretch;     /* ?뵻 ?묒そ 而щ읆 ?믪씠 留욎땄 */
     }
 
-    /* 이미지 영역 */
+    /* ?대?吏 ?곸뿭 */
     .pub-thumb-wrapper{
-        width:300px;              /* 🔹 이미지 영역 자체를 조금 키움 */
+        width:300px;              /* ?뵻 ?대?吏 ?곸뿭 ?먯껜瑜?議곌툑 ?ㅼ? */
         flex:0 0 300px;
 
         display:flex;
-        align-items:center;       /* 상하 가운데 */
-        justify-content:center;   /* 좌우 가운데 */
+        align-items:center;       /* ?곹븯 媛?대뜲 */
+        justify-content:center;   /* 醫뚯슦 媛?대뜲 */
 
         background:#fff;
     }
 
-    /* 실제 이미지 */
+    /* ?ㅼ젣 ?대?吏 */
     .pub-thumb{
         max-width:100%;
         max-height:180px;
@@ -137,8 +137,8 @@
     }
 
     .pub-meta{
-        flex:1 1 auto;   /* 🔹 남은 공간 전부 사용 */
-        min-width:0;     /* 🔹 긴 제목 줄바꿈 안정화 */
+        flex:1 1 auto;   /* ?뵻 ?⑥? 怨듦컙 ?꾨? ?ъ슜 */
+        min-width:0;     /* ?뵻 湲??쒕ぉ 以꾨컮轅??덉젙??*/
     }
 
 
@@ -161,6 +161,11 @@
     .pub-type{
       color:#555;
       font-size:0.95rem;
+    }
+
+    .award-highlight{
+      color:#b22222;
+      font-weight:700;
     }
 
     .section-title{
@@ -218,7 +223,7 @@
 
     @media (max-width: 900px){
       html{
-        font-size: 12px;   /* 18px → 15px */
+        font-size: 12px;   /* 18px ??15px */
       }
       
       .nav{
@@ -226,7 +231,7 @@
       }
       .nav a{
         font-size:1.35rem;
-        white-space: nowrap;     /* 🔥 단어 줄바꿈 금지 */
+        white-space: nowrap;     /* ?뵦 ?⑥뼱 以꾨컮轅?湲덉? */
         padding: 0.2rem 0.3rem;
       }
       .pub-item{ flex-direction:column; }
@@ -278,7 +283,7 @@
             <strong>Gyeongdeok Kim</strong>, Chungman Lim, Gyungmin Jin, Gunhyuk Park
           </div>
           <div class="pub-venue">
-            Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26)
+            Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26)
           </div>
           <div class="pub-type">
             Paper (Conditionally Accepted)
@@ -306,7 +311,7 @@
             <strong>Gyeongdeok Kim</strong>, Chungman Lim, Gunhyuk Park
           </div>
           <div class="pub-venue">
-            Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI ’25)
+            Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25)
           </div>
           <div class="pub-type">
             Paper
@@ -332,7 +337,7 @@
             IEEE Transactions on Haptics
           </div>
           <div class="pub-type">
-            Paper
+            Paper | <span class="award-highlight">&#x1F3C6; Best Paper Award</span>
           </div>
         </div>
       </div>
@@ -398,7 +403,7 @@
       </a>
     </div>
     <div class="patent-authors">
-        Gunhyuk Park, Gyeongdeok Kim, Donghyeon Kim, Bongsoo Kim, Sungho Kim 
+        Gunhyuk Park, <strong>Gyeongdeok Kim</strong>, Donghyeon Kim, Bongsoo Kim, Sungho Kim 
     </div>
     <div class="patent-meta">
         Korea Patent KR102885148B1 (Granted) · U.S. Patent Application US20240108977A1 (Published Apr. 4, 2024; Pending)
@@ -414,3 +419,10 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
