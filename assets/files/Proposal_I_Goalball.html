@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Visit Proposal | Gyeongdeok Kim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+                <style>
+        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 1.15rem; }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .interactive-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .interactive-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in { animation: fadeIn 0.4s ease-out forwards; }
+
+        @media print {
+            body { zoom: 0.30; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed selection:bg-sky-200 selection:text-sky-900">
+
+    <nav class="fixed w-full z-50 glass-panel shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <span class="text-2xl font-bold text-slate-900">&#9873;</span>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Research Proposal</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-base font-medium">
+                    <a href="#summary" class="hover:text-sky-600 transition-colors">Summary</a>
+                    <a href="#motivation" class="hover:text-sky-600 transition-colors">Motivation</a>
+                    <a href="#gaps" class="hover:text-sky-600 transition-colors">Prior Work</a>
+                    <a href="#plan" class="hover:text-sky-600 transition-colors">Plan</a>
+                    <a href="#methodology" class="hover:text-sky-600 transition-colors">Methodology</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
+        <div class="flex flex-wrap justify-center gap-3 mb-6">
+            <div class="px-5 py-2 rounded-full bg-sky-100 text-sky-800 text-sm font-bold tracking-wide border border-sky-200">
+                &#128197; Proposed Period: Sep 2026 &ndash; Early 2027 (negotiable)
+            </div>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight">
+            Designing Assistive Sports Technologies for Goalball Athletes
+        </h1>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 flex flex-col sm:flex-row items-center justify-between max-w-3xl mx-auto text-left">
+            <div>
+                <h3 class="font-bold text-xl text-slate-900">Gyeongdeok Kim</h3>
+                <p class="text-slate-500 text-base italic">PhD Student @ GIST, South Korea</p>
+            </div>
+            <div class="mt-4 sm:mt-0 flex flex-col sm:items-end text-base text-right">
+                <a href="mailto:kimkunduk@gm.gist.ac.kr" class="text-sky-600 hover:underline mb-1 font-medium flex items-center gap-2">
+                    <span>&#9993;</span> kimkunduk@gm.gist.ac.kr
+                </a>
+                <span class="text-slate-400 text-sm">HCI & Inclusive Design Researcher</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 space-y-24">
+
+        <!-- 1. Summary -->
+        <section id="summary" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 border-b-2 border-slate-200 pb-2 inline-block">1. Executive Summary</h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 text-xl border-l-4 border-l-sky-500 leading-relaxed">
+                This work investigates the training needs of visually impaired goalball athletes and examines the design space of feedback systems that support training. Leveraging <strong>participatory design</strong>, it aims to enable both <strong>independent practice</strong> and <strong>effective athlete–coach interaction</strong> through <strong>real-time, accessible feedback</strong> aligned with international competitive standards.            </div>
+        </section>
+
+        <!-- 2. Motivation -->
+        <section id="motivation" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 border-b-2 border-slate-200 pb-2 inline-block">2. Background & Motivation</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="interactive-card bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="text-4xl mb-4">&#128101;</div>
+                    <h3 class="font-bold text-xl mb-3 text-slate-900">High Dependency</h3>
+                    <p class="text-slate-600 text-base">Athletes rely heavily on coaches for verbal feedback, which limits the opportunity for personalized, spontaneous improvement.</p>
+                </div>
+                <div class="interactive-card bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="text-4xl mb-4">&#128683;</div>
+                    <h3 class="font-bold text-xl mb-3 text-slate-900">Lack of Autonomy</h3>
+                    <p class="text-slate-600 text-base">Current training lacks real-time, non-visual performance data, making independent practice nearly impossible for VI players.</p>
+                </div>
+                <div class="interactive-card bg-slate-900 text-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-4xl mb-4">&#128161;</div>
+                    <h3 class="font-bold text-xl mb-3 text-sky-300">Design Opportunity</h3>
+                    <p class="text-slate-300 text-base">Translating spatial dynamics into haptic/audio feedback without violating silent-play regulations remains an open challenge.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Prior Work & Research Gaps -->
+        <section id="gaps" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 border-b-2 border-slate-200 pb-2 inline-block">3. Prior Work & Research Gaps</h2>
+            <div class="space-y-6">
+                <div class="flex flex-col md:flex-row gap-6 items-stretch">
+                    <div class="md:w-1/3 bg-slate-100 p-8 rounded-2xl border border-slate-200">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-2">Scientific Basis</span>
+                        <h4 class="font-bold text-slate-900 text-lg mb-3">Training Fundamentals</h4>
+                        <div class="space-y-3 text-base text-slate-600">
+                            <p>Prior statistical studies by <strong>Link et al. [5]</strong> and <strong>Fujita et al. [6]</strong> established that <strong>ball trajectory</strong> and <strong>sector targeting</strong> are vital factors for competitive success.</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center items-center py-4">
+                        <span class="text-slate-300 text-3xl hidden md:block">&#10142;</span>
+                    </div>
+                    <div class="md:w-1/3 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                        <span class="text-xs font-bold text-sky-500 uppercase tracking-widest block mb-2">Technical Status</span>
+                        <h4 class="font-bold text-slate-900 text-lg mb-3">Existing Limitations</h4>
+                        <ul class="space-y-4 text-base text-slate-600">
+                            <li><strong>Virtual Barriers [1]:</strong> Systems like <i>Goalbaural</i> are often limited to VR/AR, lacking physical ball interaction.</li>
+                            <li><strong>Regulation Conflict [2, 3]:</strong> Tools like <i>L-Ball</i> or mechanical ball launchers introduce noise violating <strong>silent-play</strong> norms.</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center items-center py-4">
+                        <span class="text-slate-300 text-3xl hidden md:block">&#10142;</span>
+                    </div>
+                    <div class="md:w-1/3 bg-sky-900 p-8 rounded-2xl shadow-xl text-white">
+                        <span class="text-xs font-bold text-sky-300 uppercase tracking-widest block mb-2">Proposed Goal</span>
+                        <h4 class="font-bold text-lg mb-3">Addressing Practical Needs</h4>
+                        <p class="text-base text-sky-100 mb-4">Revalidating prior metrics to build a <strong>physical-court-based</strong> framework that provides <strong>real-time</strong> feedback while remaining <strong>regulation-compliant</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Plan -->
+        <section id="plan" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8 border-b-2 border-slate-200 pb-2 inline-block">4. Proposed Research Plan</h2>
+            
+            <div class="space-y-12">
+                <!-- Phase 1: Expansion of Context (Regional to Global) -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-sky-100 text-sky-600 px-4 py-2 rounded-xl font-bold">Phase 1</div>
+                        <h3 class="text-2xl font-bold text-slate-900">Expanding Context to a Global Perspective</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 border-l-4 border-l-sky-500">
+                            <h4 class="font-bold text-lg mb-3 text-slate-800 flex flex-wrap items-center gap-2">
+                                <span>Foundation (South Korea)</span>
+                                <span class="text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 border border-amber-200">On-going</span>
+                                <span class="text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 border border-sky-200">Target: CHI '27</span>
+                            </h4>
+                            <p class="text-base text-slate-600">
+                                Building upon detailed requirements gathered from the South Korean goalball community. This stage provides deep insight into competitive dynamics and specific accessibility barriers encountered by professional athletes.
+                            </p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 border-l-4 border-l-emerald-500">
+                            <h4 class="font-bold text-lg mb-3 text-slate-800 flex flex-wrap items-center gap-2">
+                                <span>Global Connection (United States)</span>
+                                <span class="text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 border border-sky-200">Target: ASSETS '28</span>
+                            </h4>
+                            <p class="text-base text-slate-600">
+                                Connecting Korean findings with the US-based goalball ecosystem. By engaging with athletes at the US, the research will synthesize international training needs and establish a universal design framework that transcends regional borders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2: Co-Design Synthesis -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-sky-100 text-sky-600 px-4 py-2 rounded-xl font-bold">Phase 2</div>
+                        <h3 class="text-2xl font-bold text-slate-900">Collaborative Design Synthesis</h3>
+                        <span class="text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full bg-sky-100 text-sky-700 border border-sky-200">Target: CHI '28</span>
+
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="p-6 border border-slate-200 rounded-2xl hover:bg-slate-50 transition-colors">
+                            <h4 class="font-bold text-slate-900 text-lg mb-3">Autonomous Interaction Models</h4>
+                            <p class="text-base text-slate-600">
+                                Integrating fabrication expertise to develop wearable or court-integrated sensors that provide independent, real-time auditory/haptic feedback.
+                            </p>
+                        </div>
+                        <div class="p-6 border border-slate-200 rounded-2xl hover:bg-slate-50 transition-colors">
+                            <h4 class="font-bold text-slate-900 text-lg mb-3">Regulation-Compliant Framework</h4>
+                            <p class="text-base text-slate-600">
+                                Formalizing a design space that balances rich multimodal performance data with the 'silent-play' requirements of international competition.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 5. Methodology -->
+        <section id="methodology" class="scroll-mt-24">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 border-b-2 border-slate-200 pb-2 inline-block">5. Methodology of the Current Phase</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="font-bold text-2xl mb-6 flex items-center gap-2">
+                        <span class="text-sky-500">&#128213;</span> Qualitative Research Approach [10]
+                    </h3>
+                    <div class="space-y-10 text-base text-slate-600">
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 border-l-4 border-l-sky-500">
+                            <h4 class="font-bold text-slate-900 text-lg mb-2">Interviews and Focus Groups</h4>
+                            <p>
+                                We use <strong>semi-structured interviews</strong> and, where useful, <strong>focus groups</strong> to understand real training practices from the perspectives of key stakeholders. Participants will include athletes and coaches across amateur, elite, and national-team contexts, so the study can capture both everyday constraints and high-performance demands.
+                            </p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 border-l-4 border-l-sky-500">
+                            <h4 class="font-bold text-slate-900 text-lg mb-2">Open Coding to Thematic Analysis</h4>
+                            <p>
+                                After transcription, each coder begins with <strong>open coding</strong> to identify meaningful concepts from the data. The team then compares and refines codes into a shared framework, which supports <strong>thematic analysis</strong> for deriving grounded findings, design requirements, and next-step opportunities.                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-emerald-50 p-10 rounded-2xl shadow-sm border border-emerald-200">
+                    <h3 class="font-bold text-2xl mb-6 text-emerald-900 flex items-center gap-2">
+                        <span>&#128269;</span> Examples
+                    </h3>
+                    <div class="space-y-1 text-base text-emerald-900">
+                        <div class="bg-white/70 p-5 rounded-2xl border border-emerald-200">
+                            <p class="font-bold text-lg mb-2">What is the coding?</p>
+                            <p class="text-emerald-800 mb-4 leading-relaxed">
+                            </p>
+                            <img src="figure_open_coding.png" alt="Example diagram showing the transition from raw interview data to open codes and then to an axial code." class="w-full rounded-xl border border-emerald-200 bg-white shadow-sm">
+                        </div>
+                        <div class="bg-white/70 p-5 rounded-2xl border border-emerald-200">
+                            <p class="font-bold text-lg mb-2">Code structure</p>
+                            <p class="text-emerald-800 mb-4 leading-relaxed">
+                            </p>
+                            <img src="figure_code_structure.png" alt="Hierarchical code structure example showing multiple levels of categories and subcodes." class="w-full rounded-xl border border-emerald-200 bg-white shadow-sm">
+                        </div>
+                        <div class="bg-white/60 p-4 rounded-xl border border-emerald-300 text-sm text-emerald-900 leading-relaxed">
+                            These cases serve as concrete examples of how interview-driven accessibility research can lead to <strong>publishable CHI or ASSETS outcomes [11-16]</strong>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 6. References -->
+        <section id="references" class="scroll-mt-24 pt-10">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2 inline-block">6. References</h2>
+            <ol class="list-decimal list-inside space-y-4 text-sm text-slate-500 leading-snug">
+                <li><strong>Miura, Takahiro, et al.</strong> "Goalbaural: A training application for goalball-related aural sense." <i>Proceedings of the 9th Augmented Human International Conference.</i> 2018.</li>
+                <li><strong>Pratiwi, Febriana, et al.</strong> "L-Ball: Designing a novel sports electronic audio ball for visual impairment student." <i>Annals of Applied Sport Science</i> 8.4 (2020): 0-0.</li>
+                <li><strong>Brucker, Michael, et al.</strong> "Goalball Launcher." <i>Design Engineering Technology Project Poster, Trine University.</i></li>
+                <li><strong>Polsorn, Kanlapruk, et al.</strong> "The Developments of Goalball Famous Visually Impaired Blind Athletes' Agility Using Smart Ladder Drill Prototype." <i>International Journal of Health Sciences</i> 6.S2 (2022): 184-202.</li>
+                <li><strong>Link, Daniel, and Christoph Weber.</strong> "Finding the gap: An empirical study of the most effective shots in elite goalball." <i>PLOS ONE</i> 13.4 (2018): e0196679.</li>
+                <li><strong>Fujita, Rafael, Otavio Furtado, and Marcio Morato.</strong> "Ball trajectories and probability of scoring a goal in elite male goalball throws." <i>European Journal of Adapted Physical Activity</i> 14.1 (2021).</li>
+                <li><strong>Lazar, Jonathan, Jinjuan Heidi Feng, and Harry Hochheiser.</strong> <i>Research Methods in Human-Computer Interaction.</i> Morgan Kaufmann, 2017.</li>
+                <li><strong>Kim, Gyeongdeok, Chungman Lim, and Gunhyuk Park.</strong> "I-Scratch: Independent Slide Creation With Auditory Comment and Haptic Interface for the Blind and Visually Impaired." <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.</i> 2025.</li>
+                <li><strong>Kim, Gyeongdeok, et al.</strong> "I-VAMOS: Independent Voting with Accessible Multimodal Offline System for Visually Impaired Users." <i>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems.</i> 2026.</li>
+                <li><strong>Lazar, Jonathan, Jinjuan Heidi Feng, and Harry Hochheiser.</strong> "Research methods in human-computer interaction." <i>Morgan Kaufmann.</i> 2017.</li>
+                <li><strong>Li, Franklin Mingzhe, et al.</strong> "Non-visual cooking: exploring practices and challenges of meal preparation by people with visual impairments." <i>Proceedings of the 23rd International ACM SIGACCESS Conference on Computers and Accessibility.</i> 2021.</li>
+                <li><strong>Li, Franklin Mingzhe, et al.</strong> "A Recipe for Success? Exploring Strategies for Improving Non-Visual Access to Cooking Instructions." <i>Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility.</i> 2024.</li>
+                <li><strong>Sharma, Tanusree, et al.</strong> "Disability-first design and creation of a dataset showing private visual information collected with people who are blind." <i>Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems.</i> 2023.</li>
+                <li><strong>Zhang, Lotus, et al.</strong> "Exploring interactive sound design for auditory websites." <i>Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems.</i> 2022.</li>
+                <li><strong>Li, Franklin Mingzhe, et al.</strong> "Understanding visual arts experiences of blind people." <i>Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems.</i> 2023.</li>
+                <li><strong>Ran, Zihe, et al.</strong> "How users who are blind or low vision play mobile games: Perceptions, challenges, and strategies." <i>Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.</i> 2025.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-base">
+        <p>&copy; 2026 Gyeongdeok Kim | Research Visit Proposal</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
